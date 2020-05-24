@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtfilename"
+        android:hint=" File Name"
+        android:ems="10"
+
+    />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/edtfilename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtdata"
+        android:hint=" Data "
+        android:ems="10"
+
+        />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/edtdata"
+        android:id="@+id/txtfilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="File Name: "/>
+
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtfilename"
+        android:id="@+id/txtdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Data : "/>
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsavetofile"
+        android:text="SAVE"
+        />
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnsavetofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnreadfile"
+        android:text="READ"
+        />
+</RelativeLayout>
